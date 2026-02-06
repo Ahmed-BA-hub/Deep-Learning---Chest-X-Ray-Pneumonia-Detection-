@@ -1,0 +1,32 @@
+# Dataset (too large for Git)
+chest_xray/
+data/
+
+# Model files (use Git LFS or share separately)
+*.pt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Environment
+.env
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
