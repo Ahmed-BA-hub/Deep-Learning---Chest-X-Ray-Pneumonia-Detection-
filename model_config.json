@@ -1,0 +1,37 @@
+{
+  "model_name": "EfficientNet-B0",
+  "input_size": 224,
+  "num_classes": 2,
+  "class_names": [
+    "NORMAL",
+    "PNEUMONIA"
+  ],
+  "center_crop_ratio": 0.7,
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "metrics": {
+    "accuracy": 0.9794754846066135,
+    "auc_roc": 0.9975541394537137,
+    "recall": 0.9859594383775351,
+    "specificity": 0.961864406779661,
+    "f1_score": 0.9859594383775351
+  },
+  "training": {
+    "epochs": 12,
+    "optimizer": "Adam",
+    "learning_rate": 0.0005,
+    "batch_size": 32,
+    "dataset_size": 5840,
+    "split": "70/15/15"
+  }
+}
