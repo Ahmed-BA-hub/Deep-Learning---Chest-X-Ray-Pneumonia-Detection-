@@ -4,9 +4,10 @@ from PIL import Image
 import io
 import base64
 import json
+import os
 
 # ---- Config ----
-API_URL = "http://localhost:8000"
+API_URL = os.environ.get("API_URL", "http://localhost:8000")
 
 # ---- Page Setup ----
 st.set_page_config(
@@ -167,4 +168,5 @@ st.markdown("""
     <p>Projet Deep Learning — Détection de Pneumonie | Polytech International 2026</p>
     <p>Professeur: Haythem Ghazouani</p>
 </div>
+
 """, unsafe_allow_html=True)
